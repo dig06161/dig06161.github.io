@@ -1,8 +1,15 @@
 # Setup
+<<<<<<< HEAD
 title: No
 description: A simple, beautiful, and powerful Jekyll theme for blogs
 url: https://dig06161.github.io
 avatar: /_img/avatar.jpeg
+=======
+title: 보안전공 윤조커의 공부블로그
+description: 보안, 개발, 네트워크 등등
+url: https://dig06161.github.io
+avatar: /avatar.jpeg
+>>>>>>> 97b5e699949ce46f1444aac80f59b8bb76ff21c8
 paginate: 5
 permalink: pretty
 cover_image: /_img/bg.jpeg
