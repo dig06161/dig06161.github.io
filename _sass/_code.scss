@@ -10,6 +10,7 @@ pre {
 
 code {
   font-size: 85%;
+  color: #292a2d;
 }
 
 pre {
@@ -32,7 +33,7 @@ pre {
   // Triple backticks (code fencing) doubles the .highlight elements
   .highlight {
     padding: 0;
-    color: #292a2d;
+    
   }
 }
 
