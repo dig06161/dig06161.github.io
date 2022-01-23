@@ -26,6 +26,12 @@ exclude:
   - README.md
   - scripts/
   - not-pure-poole.gemspec
+  
+defaults:
+  - scope:
+    path: "/_img
+    values:
+    image: true
 
 # Optimize Jekyl SEO Tag
 instagram:
