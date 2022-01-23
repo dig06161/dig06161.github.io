@@ -29,7 +29,7 @@ exclude:
   
 defaults:
   - scope:
-    path: "/_img
+    path: "/_img"
     values:
     image: true
 
