@@ -21,4 +21,3 @@ public class myJava {
 
 
 ![테스트 이미지]({{site.baseurl}}/_img/test.jpg){: width="50%" height="50%"}
-
