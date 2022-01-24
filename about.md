@@ -14,9 +14,10 @@ title: About
   
 - 하이퍼서트 AutoInSleep 백엔드 개발
    - (Ubuntu 18.04, Spring Framework 4, Spring Scurity, Mybatis, MariaDB)
-<br><br>
+
 - 건양대학교 K-CTF 도커 컨테이너 기반 웹, 암호학 문제출제 및 IPS 컨테이너 구축 (19.03.21 ~ 19.09.21)
 
 -   건양대학교 K-CTF 도커 컨테이너 기반 웹 문제출제 (18.04.06 ~ 18.10.27)
+    - php SQL Injection, Insecure Direct Object References
 
 - 공주대학교 정보보호영재교육원 전문반(2015년도~2017년도)
