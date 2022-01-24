@@ -3,9 +3,11 @@ layout: page
 title: About
 ---
 
-**Not Pure Poole** is a simple, beautiful, and powerful Jekyll theme for blogs. It is built on [Poole](https://github.com/poole/poole) and [Pure](https://purecss.io/).
+## **이 블로그와 저에 관해서**
+<br/>
 
-<hr>
+건양대학교 사이버보안공학과 18학번 학생으로 고등학교 시절부터 보안에 관심이 있었습니다. 보안 뿐만 아니라 개발, 네트워크 분야 등 다양한 카테고리를 가지고 이 블로그에 적어볼까 합니다. 제가 공부한 것들과, 팁, 공유할 만한 내용들을 주로 적어보겠습니다.
+<br><hr><br>
 
 - 2021년 육군 사이버경연대회(CTF) 7등
 
