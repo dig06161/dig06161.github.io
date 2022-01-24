@@ -13,17 +13,25 @@ title: About
 <hr>
 <br>
 
+### 활동내용
+<br>
+
 - 2021년 육군 사이버경연대회(CTF) 7등
 
 - 육군 지상작전사령부 제3군단사령부 103정보통신단 사이버방호실 사이버네트워크작전팀
     - (20.10.22 ~ 22.2.23)
   
 - 하이퍼서트 AutoInSleep 백엔드 개발
-     - (Ubuntu 18.04, Spring Framework 4, Spring Scurity, Mybatis, MariaDB)
+     - Ubuntu 18.04, Spring Framework 4, Spring Scurity, Mybatis, MariaDB
+     - (2019년도)
 
 - 건양대학교 K-CTF 도커 컨테이너 기반 웹, 암호학 문제출제 및 IPS 컨테이너 구축
     - Suricata IPS, RSA Algorithm, Automated Attack, Spring Boot CVE, php SQL     Injection
     - (19.03.21 ~ 19.09.21)
+
+- 롯데호텔 프리빌리지 홈페이지 백엔드 개발
+    - Spring Framework 3, mysql
+    - (2018년도)
 
 -   건양대학교 K-CTF 도커 컨테이너 기반 웹 문제출제
     - php SQL Injection, Insecure Direct Object References
