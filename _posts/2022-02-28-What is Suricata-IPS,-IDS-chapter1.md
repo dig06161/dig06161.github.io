@@ -45,7 +45,7 @@ date: 2022-02-28 19:13
 
 <center><img src="/img/suricata/suricata.png" width="50%" height="50%"></center>
 
-수리카타의 공식 홈페이지는 https://suricata.io/ 이다.
+수리카타의 공식 홈페이지는 [https://suricata.io/](https://suricata.io/) 이다.
 위에 접속하면 기본 도큐먼트로 설치와 운용가이드가 나와있다. 이 포스트는 공식 문서를 바탕으로 작성되었다.
 
 수리카타는 패킷 복제 기반인 IDS와 인라인 기반인 IPS를 둘다 지원하는 오픈소스이다.
