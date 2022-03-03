@@ -129,4 +129,37 @@ suricata -c /etc/suricata/suricata.yaml -q 0
 ```
 
 그럼 다음과 같은 화면이 뜰것이다.
-<center><img src="../img/suricata2/suricata-ips-start.png" width="80%" height="80%"></center>
+<center><img src="/img/suricata2/suricata-ips-start.png" width="80%" height="80%"></center>
+
+이후 
+```shell
+tail -f /var/log/suricata/fast.log
+```
+를 통해 탐지로그를 살펴보자.
+
+이제 kali에서 hping3를 이용해 SYN Flooding을 시도해본다.
+공격을 시도하는 순간 다음과 같은 로그들이 생성된다.
+
+<h3 style="color:red">자주가는 카페의 기본 IP와 충돌이 나 docker 네트워크 브짓지 대역을 192.168.64.0/24로 수정했습니다 </h3><br>
+<center><img src="/img/suricata2/flooding-drop.png" width="80%" height="80%"></center>
+<br>
+<center><img src="/img/suricata2/network-flow.png" width="80%" height="80%"></center>
+
+위 사진을 보면 이상한 것이 있다. 분명히 막히긴 했는데 서버에서 공격지로 나가려다 비정상 트레픽으로 차단된 ACK 로그가 있다. 탐지 룰의 트레숄드 값에 의해 통과된 일부 트래픽에 대한 응답 트레픽이 탐지 된것 같다.
+
+또 다음사진을 보면 Suricata 경고로 flow경고가 나오고 있다. Suricata에 설정된 처리 트래픽 양보다 더 많은 트레픽이 들어와 뜨는 경고다. 따라서 기업이나 트레픽 양이 많은 곳에 적용할 경우 설정을 수정하고 IDS모드로 미리 테스트를 거친 후에 IPS모드로 전환해야 할 것 같다.
+
+hping3에서는 랜덤 ip를 통한 Flooding공격도 가능하다.
+이를 테스트 해봤는데 결과는 다음과 같다.
+
+<center><img src="/img/suricata2/flooding-drop-rand.png" width="80%" height="80%"></center>
+
+로그를 보면 ET DROP Spamhaus DROP Listed Traffic Inbound group이라고 되어있다.
+Spamhaus DROP이라는 그룹에서 DROP을 권장하는 IP리스트를 제공하고 있는데 이 리스트에 hping3의 임의ip가 포함되어 있는것 같다.
+
+이 IPS를 적용하고서 생기는 문제점들이 있다. 이번에 생긴 문제점은 기본적으로 적용한 DROP룰 중에 APT update 서버로 향하는 트레픽을 막는 룰이 추가되어 있다.
+
+따라서 이 룰을 Alert로 바꾸거나 주석 처리해야지 정상적인 apt update가 가능하다.
+
+이번에 생긴 업데이트 문제 뿐만 아니라 각 룰들이 업데이트 되면서 다른 문제가 생길 가능성도 있다. 이러한 것들을 직접 핸들링 하고 테스트 하면서 수정해 줘야 한다.
+
