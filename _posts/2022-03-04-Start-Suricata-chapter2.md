@@ -89,7 +89,7 @@ port-groups:
       append: yes
       #extended: yes     # enable this for extended logging information
       #custom: yes       # enable the custom logging format (defined by customformat)
-      #customformat: "%{%D-%H:%M:%S}t.%z %{X-Forwarded-For}i %H %m %h %u %s %B %a:%p ->
+      #customformat: "{% raw %}%{%D-%H:%M:%S}t.%z %{X-Forwarded-For}i %H %m %h %u %s %B %a:%p ->{% endraw %}
       #filetype: regular # 'regular', 'unix_stream' or 'unix_dgram'
 ```
 
