@@ -78,6 +78,7 @@ port-groups:
     VXLAN_PORTS: 4789
     TEREDO_PORTS: 3544
 ```
+
 홈 네트워크 설정 바로 아래있는 포트 그룹설정이다. 이 포스트에서 서버의 서비스 포트를 8080으로 설정했으니 변경해준다.
 
 추가로 http-log가 비활성화 되어있는데 이를 활성화 해준다.
@@ -94,9 +95,11 @@ port-groups:
 ```
 
 수정 내용을 저장하고 탐지 룰 업데이트를 진행한다. 수리카타는
+
 ```
 suricata-update
 ```
+
 명령어로 통합 룰 업데이트를 지원한다. 다만 기본 룰들이 전부 alert로 되어있다. 이는 탐지는 하나 패킷드롭은 하지 않는다는 것이다. 옛날에는 오탐율 때문에 필요한 항목을 직접 드롭으로 바꿔주라는 글을 봤던 기억이 있다. 하나하나 확인하는게 좋지만 일단....문자열 치환을 이용해 alert를 전부 드롭으로 바꿔준다.
 
 suricata 룰은 업데이트 되면서 통합되어 /var/lib/suricata/rules 위치에 suricata.rules 로 저장된다. 이를 정규식을 이용해 alert를 전부 drop으로 바꿔주면 ips모드에서 패킷 차단이 가능하다.
@@ -105,6 +108,7 @@ suricata 룰은 업데이트 되면서 통합되어 /var/lib/suricata/rules 위�
 #정규식
 :%s/^alert/drop/
 ```
+
 치환전 룰인
 <center><img src="/img/suricata2/alert-rules.png" width="80%" height="80%"></center>
 
@@ -118,6 +122,7 @@ NFQ 설정을 위해 iptables 옵션을 적용해준다.
 이 설정을 적용하면 ips컨테이너와 같이 묶여있는 server 둘의 네트워크는 ips가 켜저있지 않으면 망 단절이 일어난다. 이게 인라인 IPS모드이다.
 
 명령어는 아래와 같다
+
 ```shell
 apt install iptables
 iptables -I INPUT -j NFQUEUE
@@ -125,6 +130,7 @@ iptables -I OUTPUT -j NFQUEUE
 ```
 
 이후 Suricata를 IPS모드로 작동시켜 준다.
+
 ```shell
 suricata -c /etc/suricata/suricata.yaml -q 0
 ```
@@ -133,9 +139,11 @@ suricata -c /etc/suricata/suricata.yaml -q 0
 <center><img src="/img/suricata2/suricata-ips-start.png" width="80%" height="80%"></center>
 
 이후 
+
 ```shell
 tail -f /var/log/suricata/fast.log
 ```
+
 를 통해 탐지로그를 살펴보자.
 
 이제 kali에서 hping3를 이용해 SYN Flooding을 시도해본다.
