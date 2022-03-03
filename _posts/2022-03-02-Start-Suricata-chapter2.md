@@ -5,7 +5,7 @@ layout: post
 title: Suricata IPS, IDS 시작하기 2편(운용)
 tags: [Suritaca, 수리카타, FW, ELK, splunk, IPS, IDS]
 math: true
-date: 2022-03-02 15:30
+date: 2022-03-04 03:0
 ---
 
 <h4 style="color:red">제가 공부하면서 적은 내용으로 틀린 내용이 있을수 있으니 지적해주시면 정정하겠습니다. 감사합니다.</h4><hr><br>
@@ -80,7 +80,8 @@ port-groups:
 ```
 홈 네트워크 설정 바로 아래있는 포트 그룹설정이다. 이 포스트에서 서버의 서비스 포트를 8080으로 설정했으니 변경해준다.
 
-추가로 http-log가 비활성화 되어있는데 이를 활성화 해준다
+추가로 http-log가 비활성화 되어있는데 이를 활성화 해준다.
+
 ```shell
 - http-log:
       enabled: yes
