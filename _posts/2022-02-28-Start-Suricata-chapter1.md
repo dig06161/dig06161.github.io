@@ -2,7 +2,7 @@
 published: true
 image: /img
 layout: post
-title: Suricata IPS, IDS란? 1편
+title: Suricata IPS, IDS 시작하기 1편(설명)
 tags: [Suritaca, 수리카타, FW, ELK, splunk, IPS, IDS]
 math: true
 date: 2022-02-28 19:13
