@@ -14,7 +14,7 @@ out of bound(OOB)는 버퍼의 길이를 벗어나는 인덱스를 참조하려 
 <br>
 이번 문제의 소스코드를 먼저 살펴보자.
 
-```C
+```c
 char name[16];
 
 char *command[10] = { "cat",
