@@ -5,7 +5,7 @@ layout: post
 title: Suricata IPS, IDS 시작하기 2편(운용)
 tags: [Suritaca, 수리카타, IPS, IDS]
 math: true
-date: 2022-03-04 03:0
+date: 2022-03-04 03:00
 ---
 
 <h4 style="color:red">제가 공부하면서 적은 내용으로 틀린 내용이 있을수 있으니 지적해주시면 정정하겠습니다. 감사합니다.</h4><hr><br>
