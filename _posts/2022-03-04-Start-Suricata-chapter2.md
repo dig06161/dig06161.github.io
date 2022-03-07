@@ -3,7 +3,7 @@ published: true
 image: /img
 layout: post
 title: Suricata IPS, IDS 시작하기 2편(운용)
-tags: [Suritaca, 수리카타, FW, ELK, splunk, IPS, IDS]
+tags: [Suritaca, 수리카타, IPS, IDS]
 math: true
 date: 2022-03-04 03:0
 ---
