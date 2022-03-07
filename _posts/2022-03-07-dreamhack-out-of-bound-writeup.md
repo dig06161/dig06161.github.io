@@ -2,7 +2,7 @@
 published: true
 image: /img
 layout: post
-title: [Dreamhack] out_of_bound 문제풀이
+title: &#91;Dreamhack&#93; out_of_bound 문제풀이
 tags: [Dreamhack, pwnable, ctf, writeup]
 math: true
 date: 2022-03-07 21:00
