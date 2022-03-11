@@ -7,7 +7,7 @@ tags: [Dreamhack, reversing, ctf, writeup]
 math: true
 date: 2022-03-11 21:00
 ---
-이번 문제는 리버싱문제 rev-basic-4이다.
+이번 문제는 드림핵 리버싱문제 rev-basic-4이다.
 
 우선 문제파일을 다운받으면 chall4.exe라는 프로그램이 나온다.
 이 프로그램을 실행 시키면 iput : 이라는 문구와 함께 입력창이 활성화 된다. 이후 임의 문자열을 입력하면 Wrong이라는 문자열을 표시하고 종료된다.
