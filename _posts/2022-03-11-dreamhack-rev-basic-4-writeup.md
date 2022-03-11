@@ -17,7 +17,7 @@ date: 2022-03-11 21:00
 <center><img src="/img/dreamhack-reb-basic-4/x64_main.png" width="80%" height="80%"></center>
 
 이 프로그램의 main부분이다 input 이후에 
-```C++
+```c++
 call chall4.7FF68AC31000
 ```
 부분에서 문자열을 비교해 je 명령어로 Correct와 Wrong을 나눠준다.
