@@ -35,6 +35,14 @@ layout: default
     {% include disqus.html %}
   {% endif %}
 </article>
+<hr>
+<script src="https://utteranc.es/client.js"
+        repo="dig06161/github_page_issues"
+        issue-term="pathname"
+        theme="github-dark"
+        crossorigin="anonymous"
+        async>
+</script>
 
 {% if site.related_posts != empty %}
 <aside class="related">
@@ -50,12 +58,4 @@ layout: default
     {% endfor %}
   </ul>
 </aside>
-<script src="https://utteranc.es/client.js"
-        repo="dig06161/github_page_issues"
-        issue-term="pathname"
-        theme="github-dark"
-        crossorigin="anonymous"
-        async>
-</script>
-<hr>
 {% endif %}
