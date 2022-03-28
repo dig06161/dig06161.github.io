@@ -14,7 +14,7 @@ date: 2022-03-28 00:30
 
 https://start.spring.io/ 에 들어가면 spring initializr에서 프로젝트 설정을 할 수 있고 프로젝트 이름, 패키징 방식, 자바 버전, 여러 의존성 등 여러가지 설정을 추가 한 후에 프로젝트 파일을 다운 받을 수 있다.
 
-<center><img src="../img/make-spring-project/spring-boot-initializr.png" width="80%" height="80%"></center>
+<center><img src="/img/make-spring-project/spring-boot-initializr.png" width="80%" height="80%"></center>
 <br><br>
 
 스프링 부트에 관해서는 다른 글로 다시 정리해 보겠다.
@@ -35,17 +35,17 @@ Eclipse 뿐만 아니라 VScode도 지원하는데 여기는 STS3 플러그인�
 
 우선 IDE를 다운로드 하고 원하는 위치에 STS4라는 폴더를 만든후 IDE jar파일을 폴더에 넣어준다.
 
-<center><img src="../img/make-spring-project/sts-folder.png" width="80%" height="80%"></center>
+<center><img src="/img/make-spring-project/sts-folder.png" width="80%" height="80%"></center>
 
 jar파일을 더블클릭 하면 자동으로 압축을 풀고 디렉터리에 STS 폴더를 생성후 IDE 실행에 필요한 파일들을 넣는다. 이후 이 폴더에 들어가면
 
-<center><img src="../img/make-spring-project/sts-folder2.png" width="80%" height="80%"></center>
+<center><img src="/img/make-spring-project/sts-folder2.png" width="80%" height="80%"></center>
 
 SpringToolSuite4.exe가 있다. 이 프로그램이 STS IDE이며 이를 더블클릭해 실행시킨다.
 그러면 로딩된 후 워크스페이스를 설정하는 창이 뜨고 이를 자기가 개발할 폴더로 지정해준다.
 로딩이 완료되면 익숙한 Eclipse와 비슷한 화면이 뜬다.
 
-<center><img src="../img/make-spring-project/sts4-main.png" width="80%" height="80%"></center>
+<center><img src="/img/make-spring-project/sts4-main.png" width="80%" height="80%"></center>
 
 여기서 spring boot는 Create new Spring starter Project 항목을 통해 프로젝트를 만들 수 있지만, Spring mvc 프로젝트는 항목이 보이지 않는다. 이제 STS3 플러그인을 설치해보자.
 
@@ -53,7 +53,7 @@ Help -> marketplace에 들어간 후 STS3을 검색한다.
 
 그럼
 
-<center><img src="../img/make-spring-project/marketplace-sts3.png" width="80%" height="80%"></center>
+<center><img src="/img/make-spring-project/marketplace-sts3.png" width="80%" height="80%"></center>
 
 이렇데 뜨는데 우리가 필요한 건 중간에 Spring Tools 3 add-On for Spring Tools4라는 것이다. Install 버튼을 통해 설치한다.
 
@@ -65,13 +65,13 @@ Help -> marketplace에 들어간 후 STS3을 검색한다.
 
 다시 시작한 STS에서 좌측 상단의 File -> New -> Other 을 선택하면 다음과 같은 화면이 뜬다.
 
-<center><img src="../img/make-spring-project/sts4-in-sts3-addOn.png" width="80%" height="80%"></center>
+<center><img src="/img/make-spring-project/sts4-in-sts3-addOn.png" width="80%" height="80%"></center>
 
 중간에 보면 Spring Legacy Project라는 항목이 있는데 이것이 Spring MVC 프로젝트이다.
 
 이것을 클릭하고 프로젝트 생성으로 들어가면 프로젝트 이름과 상세설정을 볼수 있다.
 
-<center><img src="../img/make-spring-project/sts4-select-spring-mvc.png" width="80%" height="80%"></center>
+<center><img src="/img/make-spring-project/sts4-select-spring-mvc.png" width="80%" height="80%"></center>
 
 맨 아래쪽의 Spring MVC Project를 클릭하고 프로젝트 생성을 누르면, maven에서 자동으로 필요한 의존성 파일들을 다운받고 프로젝트 빌드를 한다.
 
@@ -92,7 +92,7 @@ Help -> marketplace에 들어간 후 STS3을 검색한다.
 
 다음은 Spring MVC의 기본 파일 구성이다.
 
-<center><img src="../img/make-spring-project/spring-mvc-structure.png" width="80%" height="80%"></center>
+<center><img src="/img/make-spring-project/spring-mvc-structure.png" width="80%" height="80%"></center>
 
 여기서 중점으로 보는 부분들은 src/main/java 아래에 있는 자바 코드와 src/main/webapp 하위 디렉터리 폴더와 파일들, pom.xml이 될것이다.
 
@@ -495,16 +495,16 @@ pom.xml에 정의되어 있는 의존성에 대한 버전정보는 https://mvnre
 
 위의 Tomcat 설정을 진행하면서 프로젝트 모듈을 Tomcat에 임포트 하는 과정이 있을 것이다. Window -> Show View -> Other 에서 Server를 클릭하면 Server 탭이 하나 열리고 추가된 서버가 보일 것이다. 
 
-<center><img src="../img/make-spring-project/sts4-server-window.png" width="80%" height="80%"></center>
+<center><img src="/img/make-spring-project/sts4-server-window.png" width="80%" height="80%"></center>
 
 필자는 톰켓 9.0버전을 사용한다.
 
 Tomcat v9.0 Server at localhost 부분을 더블클릭하면 다음과 같은 화면을 볼수 있다.
 
-<center><img src="../img/make-spring-project/sts4-server-webModules.png" width="80%" height="80%"></center>
+<center><img src="/img/make-spring-project/sts4-server-webModules.png" width="80%" height="80%"></center>
 
 여기서 추가된 프로젝트 웹 모듈을 확인할 수 있고, 혹시라도 추가되어 있지 않으면 Add Web Module을 클릭해 프로젝트를 추가해준다.
 
 이후 톰켓을 실행시키면 프로젝트 기본 페이지를 볼수 있다.
 
-<center><img src="../img/make-spring-project/spring-mvc-running.png" width="80%" height="80%"></center>
+<center><img src="/img/make-spring-project/spring-mvc-running.png" width="80%" height="80%"></center>
