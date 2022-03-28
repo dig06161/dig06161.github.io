@@ -2,7 +2,7 @@
 published: ture
 image: /img
 layout: post
-title: [Spring Framework] 스프링 프레임워크란?
+title: Spring Framework 스프링 프레임워크란?
 tags: [java, spring framework]
 math: true
 date: 2022-03-23 23:30

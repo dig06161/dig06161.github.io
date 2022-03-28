@@ -2,7 +2,7 @@
 published: ture
 image: /img
 layout: post
-title: [Spring Framework] STS로 스프링 MVC 프레임워크 프로젝트 만들기
+title: Spring Framework STS로 스프링 MVC 프레임워크 프로젝트 만들기
 tags: [java, spring framework]
 math: true
 date: 2022-03-28 00:30
