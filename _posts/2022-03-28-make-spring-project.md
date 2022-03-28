@@ -35,7 +35,7 @@ Eclipse 뿐만 아니라 VScode도 지원하는데 여기는 STS3 플러그인�
 
 우선 IDE를 다운로드 하고 원하는 위치에 STS4라는 폴더를 만든후 IDE jar파일을 폴더에 넣어준다.
 
-<center><img src="/img/make-spring-project/sts-folder.png" width="80%" height="80%"></center>
+<center><img src="/img/make-spring-project/sts-folder1.png" width="80%" height="80%"></center>
 
 jar파일을 더블클릭 하면 자동으로 압축을 풀고 디렉터리에 STS 폴더를 생성후 IDE 실행에 필요한 파일들을 넣는다. 이후 이 폴더에 들어가면
 
