@@ -485,7 +485,7 @@ view -> home.jsp는 servlet-context.xml에서 설정한것 같이, 컨트롤러�
 </project>
 ```
 
-pom.xml에 정의되어 있는 의존성에 대한 버전정보는 https://mvnrepository.com/ 에서 확인이 가능하고 원하는 버전을 사용할 수 있다. 다만 주의해야 할 점이 Spring 버전과 openjdk 버전을 맞춰줘야 한다. 이러한 버전관리에서 발생하는 복잡성 때문에 gradle이라는 기술이 등장해 Spring Boot에 적용되었다.
+pom.xml에 정의되어 있는 의존성에 대한 버전정보는 https://mvnrepository.com/ 에서 확인이 가능하고 원하는 버전을 사용할 수 있다. 다만 주의해야 할 점이 Spring 버전과 openjdk 버전 등 여러 라이브러리의 버전을 맞춰줘야 한다. jdk와 spring 버전이 특정 라이브러리 버전을 지원한다고 해도 다른 라이브러리와 버전 충돌로 인해 사용이 불가 할수도 있다. 이러한 버전관리에서 발생하는 복잡성 때문에 gradle이라는 기술이 등장해 Spring Boot에 적용되었다.
 
 다만 개인적으로 필자는 아직도 Maven이 익숙해 종종 사용하고 있다.
 
