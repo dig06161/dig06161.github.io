@@ -55,7 +55,7 @@ xsi:schemaLocation 에 http://www.springframework.org/schema/aop http://www.spri
 
 <br><br>
 
-## Pointcut
+## Pointcut(어디에)
 어디에 공통관심 코드를 적용할 것인지에 대한 설정을 진행한다. 하나의 @Aspect 안에 여러개의 포인트 컷 설정이 가능하다.
 
 ```java
