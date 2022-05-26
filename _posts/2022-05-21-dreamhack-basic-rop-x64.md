@@ -105,9 +105,14 @@ Non-debugging symbols:
 
 write는 인자를 3개 필요로 해 데이터를 출력하는데 puts 함수를 사용할 것이다.
 
-이제 함수를 사용하기 위한 가젯을 찾아야 하는데 ROPgadget --binary basic_rop_x64 | grep rdi 명령어로 가능하다. 결과는 다음과 같다.
+이제 함수를 사용하기 위한 가젯을 찾아야 하는데 
+```
+ROPgadget --binary basic_rop_x64 | grep rdi 
+```
+명령어로 가능하다. 결과는 다음과 같다.
 
 ```c++
+
 /file# ROPgadget --binary basic_rop_x64 | grep rdi 
 0x0000000000400726 : cmp dword ptr [rdi], 0 ; jne 0x400730 ; jmp 0x4006c0
 0x0000000000400725 : cmp qword ptr [rdi], 0 ; jne 0x400730 ; jmp 0x4006c0
