@@ -13,7 +13,7 @@ date: 2022-06-26 17:30
 environ을 간단히 설명해보면 프로그램이 동작할 떄 시스템의 환경변수를 참조해야할 경우가 있다. 이때 사용하는 것이 environ 포인터인데 이는 시스템의 환경변수를 가리키며 로더의 초기화 함수에 의해 초기화 된다.
 
 이번 문제의 코드를 살펴보면 다음과 같다
-```C++
+```c
 int main()
 {
     char buf[16];
@@ -57,7 +57,7 @@ stack canary가 적용되어 있지만 이를 체크하기 전에 쉘 코드가 
 우선 해당 바이너리를 익스하기 위해 stdout주소에서 stdout offset의 차를 구해 libc base주소를 구한다. 이후 해당 libc base주소에 environ offset을 더해 바이너리의 environ주소를 구한다. 다음으로 buf를 오버플로우 시켜 environ 영역에 쉘 코드를 삽입하고 해당 주소로 점프하면 쉘을 구할 수 있다.
 
 main함수의 어셈블리를 살펴보자
-```C++
+```c
 0x000000000040089a <+0>:     push   rbp
    0x000000000040089b <+1>:     mov    rbp,rsp
    0x000000000040089e <+4>:     sub    rsp,0x40
@@ -113,7 +113,7 @@ main함수의 어셈블리를 살펴보자
 stdout을 통해 libc base 주소를 구하는 것은 어렵지 않다.
 pwntools을 이용하면 된다. 출력된 주소 - libc.symbols["_IO_2_1_stdout_"]를 이용하면 쉽게 구할 수 있다. 가장 중요한 것은 buf의 위치와 environ 위치의 offset을 구해야 하는데 gdb 상에서 살펴보면 read 함수에서 받아 저장할 위치는 rbp-0x20이라고 되어있다.
 
-```C++
+```c
 0x0000000000400908 <+110>:   mov    rdx,QWORD PTR [rbp-0x38]
 ```
 
