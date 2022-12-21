@@ -2,7 +2,7 @@
 published: true
 image: /img
 layout: post
-title: \[Dreamhack\] 시스템 해킹 environ
+title: [Dreamhack] 시스템 해킹 environ
 tags: [Dreamhack, pwnable, ctf, writeup]
 math: true
 date: 2022-12-20 17:30
