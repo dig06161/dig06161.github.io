@@ -2,8 +2,8 @@
 published: true
 image: /img
 layout: post
-title: "[Dreamhack] 시스템 해킹 environ"
-excerpt: "드림핵 PWn environ 문제풀이"
+title: "[Dreamhack] PWN environ"
+excerpt: "드림핵 포너블 environ 문제풀이"
 tags: [Dreamhack, pwnable, ctf, writeup]
 math: true
 date: 2022-12-20 17:30
