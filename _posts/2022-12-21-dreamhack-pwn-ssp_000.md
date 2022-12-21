@@ -6,7 +6,6 @@ title: "[Dreamhack] PWN ssp_000"
 excerpt: "드림핵 포너블 ssp_000 문제풀이"
 tags: [Dreamhack, pwnable, ctf, writeup]
 math: true
-timezone: Asia/Seoul
 date: 2022-12-21 09:30
 ---
 

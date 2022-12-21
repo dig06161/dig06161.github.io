@@ -6,6 +6,7 @@ avatar: /img/profile.jpg
 paginate: 5
 permalink: pretty
 cover_image: /img/profile_bg.jpg
+timezone: Asia/Seoul
 
 # Gems
 plugins:
