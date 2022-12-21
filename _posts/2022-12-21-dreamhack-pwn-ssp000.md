@@ -5,7 +5,7 @@ layout: post
 title: \[Dreamhack\] 시스템 해킹 ssp\_000
 tags: [Dreamhack, pwnable, ctf, writeup]
 math: true
-date: 2022-12-21 17:30
+date: 2022-12-21 15:30
 ---
 
 이번 ssp_000문제는 카나리에 대한 문제다. 메모리 스텍의 오염을 인식하고 오염되었을 경우 바이너리를 강제 종료시키는 기능을 한다. 스텍 사이에 랜덤의 값을 넣고 이를 검사해 스텍이 오버플로우 되었는지 확인한다. 이렇게 메모리 커럽션을 어렵게 하는 기법을 Stack Smashing Protector(SSP)라고 한다.
