@@ -6,7 +6,7 @@ title: "[Dreamhack] PWN ssp_000"
 excerpt: "드림핵 포너블 ssp_000 문제풀이"
 tags: [Dreamhack, pwnable, ctf, writeup]
 math: true
-date: 2022-12-21 16:30
+date: 2022-12-19 16:30
 ---
 
 이번 ssp_000문제는 카나리에 대한 문제다. 메모리 스텍의 오염을 인식하고 오염되었을 경우 바이너리를 강제 종료시키는 기능을 한다. 스텍 사이에 랜덤의 값을 넣고 이를 검사해 스텍이 오버플로우 되었는지 확인한다. 이렇게 메모리 커럽션을 어렵게 하는 기법을 Stack Smashing Protector(SSP)라고 한다.
