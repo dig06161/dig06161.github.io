@@ -6,6 +6,7 @@ title: "[Dreamhack] PWN environ"
 excerpt: "드림핵 포너블 environ 문제풀이"
 tags: [Dreamhack, pwnable, ctf, writeup]
 math: true
+timezone: Asia/Seoul
 date: 2022-12-20 17:30
 ---
 
