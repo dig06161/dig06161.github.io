@@ -3,9 +3,9 @@ published: true
 image: /img
 layout: post
 title: Dreamhack 시스템 해킹 environ
-tags: [BOB]
+tags: [Dreamhack, pwnable, ctf, writeup]
 math: true
-date: 2022-06-26 17:30
+date: 2022-12-20 17:30
 ---
 
 오랜만에 풀어보는 시스템 해킹이다.
