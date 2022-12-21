@@ -2,7 +2,7 @@
 published: true
 image: /img
 layout: post
-title: Dreamhack 시스템 해킹 ssp_000
+title: \[Dreamhack\] 시스템 해킹 ssp\_000
 tags: [Dreamhack, pwnable, ctf, writeup]
 math: true
 date: 2022-12-21 17:30
