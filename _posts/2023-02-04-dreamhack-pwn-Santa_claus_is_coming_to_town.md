@@ -2,7 +2,7 @@
 published: true
 image: /img
 layout: post
-title: "[Dreamhack] PWN Santa_claus_is_coming_to_town."
+title: "[Dreamhack] PWN Santa_claus_is_coming_to_town"
 excerpt: "드림핵 포너블 Santa_claus_is_coming_to_town 문제풀이"
 tags: [Dreamhack, pwnable, ctf, writeup]
 math: true
