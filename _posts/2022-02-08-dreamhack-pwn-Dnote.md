@@ -6,7 +6,7 @@ title: "[Dreamhack] PWN Dream's Notepad"
 excerpt: "드림핵 포너블 Dream's Notepad 문제풀이"
 tags: [Dreamhack, pwnable, ctf, writeup]
 math: true
-date: 2023-02-08 18:30
+date: 2023-02-08 18:00
 ---
 
 드림핵 포너블 Dream's Notepad 문제이다. 이 문제를 다운받아 보면 바이너리와 소스코드만 주어진다. 문제 환경은 공개되어 있지 않다.
