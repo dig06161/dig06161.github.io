@@ -286,13 +286,27 @@ else if(!strncmp(command, "printf", 6)) {
 
 시나리오를 작성해보자.
 
-위 부분을 살펴보면 입력받은 coomand 변수에 공백을 잘라서 src에 넣고 stdin 값을 dst에 넣은 다음 src 값이 존재하면 dst를 src 값으로 덮어씌우는 동작을 한다. 총 0x40만큼 덮을 수 있으며 dst는 입력을 담당하는 stdin의 위치를 가리키며 _IO_FILE 구조체가 존재하는 부분이다. 0x40만큼 오버라이트 할수 있게 되면 _IO_FILE의 buf_base까지 값을 쓸 수 있고, 이는 원하는 부분에 값을 입력 할 수 있게된다. 
+위 부분을 살펴보면 입력받은 command 변수에 공백을 잘라서 src에 넣고 stdin 값을 dst에 넣은 다음 src 값이 존재하면 dst를 src 값으로 덮어씌우는 동작을 한다. 총 0x40만큼 덮을 수 있으며 dst는 입력을 담당하는 stdin의 위치를 가리키며 _IO_FILE 구조체가 존재하는 부분이다. 0x40만큼 오버라이트 할수 있게 되면 _IO_FILE의 buf_base까지 값을 쓸 수 있고, 이는 원하는 부분에 값을 입력 할 수 있게된다. 
 
 이렇게 변조된 stdin을 사용하는 곳이 read가 입력되었을 때이다. read가 입력되면 read_str() 함수가 실행되는데 이 함수 내부에는 fgets 함수가 사용되어 _IO_FILE의 내용을 바탕으로 값을 쓸 수 있다.
 
 fgets을 이용해 command 전역 변수 값의 크기를 검증하는 size변수 값을 조작할 수 있을것 같다. read_command()함수를 통해 size변수의 값 만큼만 read해 마지막 글자가 \x0a 값이면 이를 \0으로 바꾸는 동작을 한다.
 
 printf를 통해서 stdin 구조체의 buf_base를 size 변수 주소를 넣고 read를 입력해 충분히 큰 값으로 바꾼다. 그러면 commend 변수에 값 길이를 검증하는 size 변수가 조작되어 command 변수에 오버플로우를 일으킬 수 있다. 이를 이용해 return 주소를 get_shell() 함수주소로 변경하면 익스플로잇에 성공한다.
+
+gdb를 통해서 stdin 구조를 출력하면 다음과 같다.
+```c
+flag            0x00000000fbad208b
+read ptr        0x00007ffff7dd1963
+read end        0x00007ffff7dd1963
+read base       0x00007ffff7dd1963
+write base      0x00007ffff7dd1963
+write ptr       0x00007ffff7dd1963
+write end       0x00007ffff7dd1963
+buf base        0x00007ffff7dd1963
+buf end         0x00007ffff7dd1964
+```
+flag 값을 보면 0xfbad208b가 설정되어 있는데 b가 의미하는게 뭔지 잘 모르겠다. flag정보를 찾아보는데 잘 안나왔다. 그래서 익스플로잇 코드를 작성할 때 쓰기권한인 8을 주고 공격을 시도했다.
 
 아래 공격코드를 이용했다.
 
