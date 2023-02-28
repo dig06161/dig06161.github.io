@@ -46,7 +46,7 @@ struct _IO_FILE
 #ifdef _IO_USE_OLD_IO_FILE
 };
 ```
-
+---
 ```
 _flags
     파일에 대한 읽기/쓰기/추가 권한을 의미.
