@@ -4,7 +4,7 @@ image: /img
 layout: post
 title: "[Dreamhack] PWN iofile_aw, what is _IO_FILE?"
 excerpt: "드림핵 포너블 iofile_aw 문제풀이"
-tags: [Dreamhack, pwnable, ctf, writeup, _IO_FILE]
+tags: [Dreamhack, pwnable, ctf, wargame, _IO_FILE]
 math: true
 date: 2023-02-28 17:00
 ---

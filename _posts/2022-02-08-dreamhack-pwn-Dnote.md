@@ -4,7 +4,7 @@ image: /img
 layout: post
 title: "[Dreamhack] PWN Dream's Notepad"
 excerpt: "드림핵 포너블 Dream's Notepad 문제풀이"
-tags: [Dreamhack, pwnable, ctf, writeup]
+tags: [Dreamhack, pwnable, wargame, writeup]
 math: true
 date: 2023-02-08 18:00
 ---

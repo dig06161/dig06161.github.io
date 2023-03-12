@@ -4,7 +4,7 @@ image: /img
 layout: post
 title: "[Dreamhack] PWN house_of_spirit"
 excerpt: "드림핵 포너블 house_of_spirit 문제풀이"
-tags: [Dreamhack, pwnable, ctf, writeup]
+tags: [Dreamhack, pwnable, wargame, writeup]
 math: true
 date: 2023-02-26 15:00
 ---

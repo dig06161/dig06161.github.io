@@ -3,7 +3,7 @@ published: true
 image: /img
 layout: post
 title: Dreamhack rev-basic-7 문제풀이
-tags: [Dreamhack, reversing, ctf, writeup]
+tags: [Dreamhack, reversing, wargame, writeup]
 math: true
 date: 2022-05-01 06:30
 ---

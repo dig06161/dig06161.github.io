@@ -4,7 +4,7 @@ image: /img
 layout: post
 title: "[Dreamhack] PWN environ"
 excerpt: "드림핵 포너블 environ 문제풀이"
-tags: [Dreamhack, pwnable, ctf, writeup]
+tags: [Dreamhack, pwnable, wargame, writeup]
 math: true
 date: 2022-12-20 17:30
 ---

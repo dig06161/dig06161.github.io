@@ -3,7 +3,7 @@ published: true
 image: /img
 layout: post
 title: Dreamhack 시스템 해킹 basic_rop_x64
-tags: [Dreamhack, pwnable, ctf, writeup]
+tags: [Dreamhack, pwnable, wargame, writeup]
 math: true
 date: 2022-05-21 21:00
 ---

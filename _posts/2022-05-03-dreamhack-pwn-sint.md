@@ -3,7 +3,7 @@ published: true
 image: /img
 layout: post
 title: Dreamhack sint 문제풀이
-tags: [Dreamhack, pwnable, ctf, writeup]
+tags: [Dreamhack, pwnable, wargame, writeup]
 math: true
 date: 2022-05-03 21:00
 ---

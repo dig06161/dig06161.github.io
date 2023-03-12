@@ -4,7 +4,7 @@ image: /img
 layout: post
 title: "[Dreamhack] PWN Santa_claus_is_coming_to_town"
 excerpt: "드림핵 포너블 Santa_claus_is_coming_to_town 문제풀이"
-tags: [Dreamhack, pwnable, ctf, writeup]
+tags: [Dreamhack, pwnable, wargame, writeup]
 math: true
 date: 2023-02-04 09:30
 ---

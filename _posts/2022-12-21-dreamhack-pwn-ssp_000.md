@@ -4,7 +4,7 @@ image: /img
 layout: post
 title: "[Dreamhack] PWN ssp_000"
 excerpt: "드림핵 포너블 ssp_000 문제풀이"
-tags: [Dreamhack, pwnable, ctf, writeup]
+tags: [Dreamhack, pwnable, wargame, writeup]
 math: true
 date: 2022-12-21 09:30
 ---
