@@ -2,8 +2,8 @@
 published: true
 image: /img
 layout: post
-title: "[Dreamhack] PWN cpp_smart_pointer_1"
-excerpt: "드림핵 포너블 cpp_smart_pointer_1 문제풀이"
+title: "[Dreamhack] PWN cpp_string"
+excerpt: "드림핵 포너블 cpp_string 문제풀이"
 tags: [Dreamhack, pwnable, wargame, writeup]
 math: true
 date: 2023-04-04 18:00
