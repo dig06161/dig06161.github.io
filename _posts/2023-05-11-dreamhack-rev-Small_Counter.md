@@ -2,7 +2,7 @@
 published: true
 image: /img
 layout: post
-title: "[Dreamhack] PWN Small Counter"
+title: "[Dreamhack] REV Small Counter"
 excerpt: "드림핵 리버싱 Small Counter 문제풀이"
 tags: [Dreamhack, reversing, wargame, writeup]
 math: true
