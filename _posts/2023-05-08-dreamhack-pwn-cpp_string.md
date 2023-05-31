@@ -6,7 +6,7 @@ title: "[Dreamhack] PWN cpp_string"
 excerpt: "드림핵 포너블 cpp_string 문제풀이"
 tags: [Dreamhack, pwnable, wargame, writeup]
 math: true
-date: 2023-04-04 18:00
+date: 2023-05-08 18:00
 ---
 
 이번 문제는 드림핵 1단계 cpp_string이다.
