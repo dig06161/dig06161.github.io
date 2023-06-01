@@ -12,7 +12,7 @@ date: 2022-05-01 06:30
 
 우선 basic-6과 동일하게 문자열을 입력 받고 정답이면 Correct, 아니면 Wrong을 출력한다. 바이너리 실행결과는 다음과 같다.
 
-![binary_run](/img/dreamhack-rev-basic-7/binary_run.png)
+![binary_start](/img/dreamhack-rev-basic-7/binary_start.png)
 
 
 우선 가장 먼저 해야할 일은 main함수를 찾는것이다. 윈도우 바이너리인 PE파일의 헤더 구조를 보면 매우 많은 정보들이 들어있다. 그것들 중 리버싱을 할떄 중점으로 봐야할 부분은 .text영역이다. 실질적으로 코드가 컴파일되어 저장되는 영역으로 대부분의 main함수는 이 영역 시작 지점과 인접하게 존재한다. 컴파일러의 보안 미티게이션의 추가로 메모리 주소 랜덤화가 자동으로 걸려 0x401000주소에 main이 들어가는 경우는 이젠 없을 것이다.
