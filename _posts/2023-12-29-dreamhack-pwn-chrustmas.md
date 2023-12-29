@@ -415,7 +415,7 @@ cmp 부분을 보면 rcx와 rax를 비교하는데 rax 부분이 b의 아스키 
 0x5555ea10중 해당 에러를 띄워주는 부분을 0xea 부분으로 추측했다. 아스키코드에는 없는 값이고 해당 값을 파이썬으로 utf-8인코딩을 걸었을 때 에러가 발생하였다. 그러면 0x5555ea까지는 사용할 수 없다는 것을 의미한다. 즉, 1바이트로 주소값을 조작해야 하는데 가능한지 살펴보자.
 
 
-```c+
+```c++
 0x000055555555ee92 in prob::main ()
 LEGEND: STACK | HEAP | CODE | DATA | RWX | RODATA
 ──────────────────────────[ REGISTERS / show-flags off / show-compact-regs off ]───────────────────────────
