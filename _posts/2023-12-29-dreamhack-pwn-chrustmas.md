@@ -401,7 +401,7 @@ LEGEND: STACK | HEAP | CODE | DATA | RWX | RODATA
    6   0x5555555763ab std::rt::lang_start_internal+1051
    7   0x5555555763ab std::rt::lang_start_internal+1051
 ───────────────────────────────────────────────────────────────────────────────────────────────────────────
-pwndbg> 
+pwndbg> c
 ```
 
 cmp 부분을 보면 rcx와 rax를 비교하는데 rax 부분이 b의 아스키 코드인 62로 일부 덮어쓰여져 있다. rcx는 0x55555555ea10 값을 가지고 있으며 win()함수의 주소를 가지고 있다. 이 값이 rax에 동일하게 있으면 wi()함수를 실행하게 될 것이다.
@@ -416,6 +416,7 @@ cmp 부분을 보면 rcx와 rax를 비교하는데 rax 부분이 b의 아스키 
 
 
 ```c++
+
 0x000055555555ee92 in prob::main ()
 LEGEND: STACK | HEAP | CODE | DATA | RWX | RODATA
 ──────────────────────────[ REGISTERS / show-flags off / show-compact-regs off ]───────────────────────────
@@ -471,6 +472,7 @@ LEGEND: STACK | HEAP | CODE | DATA | RWX | RODATA
    7   0x5555555763ab std::rt::lang_start_internal+1051
 ───────────────────────────────────────────────────────────────────────────────────────────────────────────
 pwndbg> 
+
 ```
 
 rax 레지스터의 값을 보면 다행이도 하위 1바이트를 제외하고 rcx와 동일한 값을 가지고 있다. 따라서 16개의 a와 0x10을 바이트로 전송하면 플레그 획득에 성공한다. 공격 코드와 결과는 다음과 같다.
