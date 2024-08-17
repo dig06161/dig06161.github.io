@@ -14,7 +14,7 @@ date: 2024-08-17 14:00
 해당 문제를 보면 우분투 22.04기반 컨테이너에 동작하고 libc 파일이 주어진다.
 prob 바이너리가 주어지며 이를 실행시키면 다음과 같은 동작을 가진다.
 
-```c+
+```c++
 root@b87ade2e40ca:/home# ./prob
 If you really want to give me a present, bring me that kind detective's heart.
 > aaaaaaaaaaaaaaa
