@@ -2,7 +2,8 @@
 published: ture
 image: /img
 layout: post
-title: Ghidra 원격 디버깅 
+title: "Ghidra remote debugger"
+excerpt: "Ghidra 원격 디버깅 사용하기"
 tags: [PWN, Ghidra, remote_debug]
 math: true
 date: 2025-08-10 18:30
