@@ -40,7 +40,7 @@ gdbserver 가 5555를 디버그 포트로 하여금 접속 대기중이다. 이�
 
 ![image.png](/img/Ghidra-remote-debugger/image%202.png)
 
-필자는 미리 auto Analysis를 통해 디컴파일을 진행했다. Debugger → Configure and Launch 대상 바이너리 이름 using… → gdb remote 를 선택해 연결 환경을 구성한다.
+필자는 미리 auto Analysis를 통해 디컴파일을 진행했다. Debugger → Configure and Launch 대상 바이너리 이름 using... → gdb remote 를 선택해 연결 환경을 구성한다.
 
 ![image.png](/img/Ghidra-remote-debugger/image%203.png)
 
