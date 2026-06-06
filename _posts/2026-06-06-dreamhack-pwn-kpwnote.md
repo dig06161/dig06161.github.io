@@ -43,6 +43,7 @@ CONFIG_STATIC_USERMODEHELPER_PATH=""
 ```
 
 각 설정에 대한 설명은 다음과 같다.
+
 | 설정 | 설명 |
 |---|---|
 | `RANDOMIZE_BASE=y` | KASLR 활성화 → leak으로 slide 역산 필요 |
