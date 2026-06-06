@@ -24,6 +24,11 @@ enableGitInfo = false
 [pagination]
   pagerSize = 5
 
+# 새 글 기본 URL 패턴 = 기존 Jekyll과 동일(/YYYY/MM/DD/슬러그/).
+# 기존 글은 각자 front matter의 url:이 우선하므로 영향 없음.
+[permalinks]
+  posts = "/:year/:month/:day/:slug/"
+
 # 기존 Jekyll 분류 페이지 유지 (/tags/ 는 네이티브, /dates/ 는 archives로 대체)
 [taxonomies]
   tag = "tags"
