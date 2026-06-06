@@ -29,10 +29,9 @@ enableGitInfo = false
 [permalinks]
   posts = "/:year/:month/:day/:slug/"
 
-# 기존 Jekyll 분류 페이지 유지 (/tags/ 는 네이티브, /dates/ 는 archives로 대체)
+# 분류는 tags만 사용 (글에 categories를 쓰지 않아 categories는 비활성화)
 [taxonomies]
   tag = "tags"
-  category = "categories"
 
 [params]
   description = "보안, 개발, 네트워크 등등"
@@ -82,11 +81,6 @@ enableGitInfo = false
     name = "Tags"
     url = "/tags/"
     weight = 20
-  [[menu.main]]
-    identifier = "categories"
-    name = "Categories"
-    url = "/categories/"
-    weight = 30
   [[menu.main]]
     identifier = "about"
     name = "About"
