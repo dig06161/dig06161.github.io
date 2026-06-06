@@ -1,0 +1,27 @@
+/* 숫자형 페이지네이션 스타일 (커스텀) */
+.pagination.pagination-numbered {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+.pagination.pagination-numbered .next {
+    margin-inline-start: 0; /* 기본 우측 밀어내기 해제 */
+}
+.pagination.pagination-numbered .page-num,
+.pagination.pagination-numbered .prev,
+.pagination.pagination-numbered .next {
+    min-width: 36px;
+    text-align: center;
+}
+.pagination.pagination-numbered .page-num.active {
+    background: var(--theme);
+    color: var(--primary);
+    border: 1px solid var(--primary);
+    font-weight: 700;
+    pointer-events: none;
+}
+.pagination.pagination-numbered .page-ellipsis {
+    line-height: 36px;
+    padding: 0 4px;
+    color: var(--secondary);
+}
