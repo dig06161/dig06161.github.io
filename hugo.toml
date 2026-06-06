@@ -1,0 +1,94 @@
+baseURL = "https://dig06161.github.io/"
+title = "My Life"
+theme = "PaperMod"
+languageCode = "ko-kr"
+defaultContentLanguage = "ko"
+timeZone = "Asia/Seoul"
+
+enableInlineShortcodes = true
+enableEmoji = true
+enableGitInfo = false
+
+# 기존 Jekyll 글들이 본문에 raw HTML(<img>, <center> 등)을 사용하므로 필수
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+  [markup.highlight]
+    noClasses = false
+    codeFences = true
+    guessSyntax = true
+    lineNos = false
+    tabWidth = 4
+
+[pagination]
+  pagerSize = 5
+
+# 기존 Jekyll 분류 페이지 유지 (/tags/ 는 네이티브, /dates/ 는 archives로 대체)
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+
+[params]
+  description = "보안, 개발, 네트워크 등등"
+  author = "Yunjoker"
+  defaultTheme = "auto"
+  ShowReadingTime = true
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowToc = true
+  TocOpen = false
+  ShowFullTextinRSS = true
+  math = false
+
+  # 제거된 .Site.Social 접근 회피용 (PaperMod 가드가 params.social을 우선 사용)
+  [params.social]
+    twitter = ""
+    facebook_admin = ""
+
+  [params.homeInfoParams]
+    Title = "My Life"
+    Content = "보안, 개발, 네트워크 등등 — 리버싱 · 시스템 해킹 writeup 아카이브"
+
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/dig06161"
+  [[params.socialIcons]]
+    name = "instagram"
+    url = "https://www.instagram.com/hyeokjong_yun/"
+  [[params.socialIcons]]
+    name = "rss"
+    url = "/index.xml"
+
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+# 메뉴
+[menu]
+  [[menu.main]]
+    identifier = "archives"
+    name = "Archives"
+    url = "/archives/"
+    weight = 10
+  [[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
+    weight = 20
+  [[menu.main]]
+    identifier = "categories"
+    name = "Categories"
+    url = "/categories/"
+    weight = 30
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 40
+  [[menu.main]]
+    identifier = "search"
+    name = "Search"
+    url = "/search/"
+    weight = 50
